@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with your friends! - Chats</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/toastify.min.css">
+</head>
+<body class="d-flex h-100 w-100" style="height: 100vh;">
+    <div id="sidebarContainer" data-section="settings"></div>
+    <div style="flex: 1;" class="border-start">
+        <header class="border-bottom m-0 chat-header">
+            <h1 class="p-2 title m-0 d-inline-block mr-1 h4">Settings
+            </h1>
+        </header>
+        <div class="p-3">
+            <div class="mb-4">
+                <h6>Open popUp</h6>
+                <p class="text-secondary lh-1" style="font-size: x-small;">Open MiniChat in a separate popUp so you can use it even if you don't have the browser open</p>
+                <a class="btn btn-primary" id="open-popup">Open popUp</a>
+            </div>
+            <div class="mb-4">
+                <h6>Security Key</h6>
+                <p class="text-secondary lh-1" style="font-size: x-small;">Use this key to log in with your MiniChat account on other devices. Don't share it with anyone.</p>
+                <b id="securityKeyText" class="d-block mb-3"></b>
+                <button class="btn btn-primary" id="reveal-security-key">Reveal secret key</button>
+            </div>
+            <div class="mb-4">
+                <h6>Sign off</h6>
+                <p class="text-secondary lh-1" style="font-size: x-small;">Make sure that you have the secret key with you, otherwise you'll lose all your data.</p>
+                <button class="btn btn-danger" id="signoff_button_settings">Sign Off</button>
+            </div>
+            <div class="text-center">
+                <h6>Made with ❤️ by Bruno Rodríguez</h6>
+            </div>
+        </div>
+    </div>
+    <div id="getKey" class="modalchat">
+        <div class="modalchat-content">
+            <div class="border-bottom mb-3">
+                <h4 class="title">Confirm action</h4>
+            </div>
+            <div>
+                <p class="lh-1">Type <b>CONFIRM</b> to copy your security key to the clipboard</p>
+                <input type="text" id="getKeyInput" autocomplete="off" class="form-control p-2 mb-3" style="height: 35px; font-size: 16px;">
+                <input type="button" value="Copy key" class="btn btn-primary w-100 p-0 mb-1" style="height: 25px; font-size: 14px;" id="get-key-btn">
+                <input type="button" value="Cancel" class="btn close w-100 p-0 btn-outline-secondary" style="height: 25px; font-size: 14px;">
+            </div>
+        </div> 
+    </div>
+    <script src="../lib/luxon.min.js"></script>
+    <script src="../lib/vanillaEmojiPicker.js"></script>
+    <script src="../lib/toastify.min.js"></script>
+    <script src="../js/settings.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>

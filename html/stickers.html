@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with your friends! - Chats</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/toastify.min.css">
+</head>
+<body class="d-flex h-100 w-100" style="height: 100vh;">
+    <div id="sidebarContainer" data-section="stickers"></div>
+    <div style="flex: 1; height: 100vh;" class="border-start">
+        <header class="border-bottom m-0 chat-header">
+            <h1 class="p-2 title m-0 d-inline-block mr-1 h4">Stickers
+            </h1>
+        </header>
+        <div class="p-2">
+                <h6>Your stickers <span class="fw-normal text-secondary" style="font-size: x-small;">(<span id="stickersNumber"></span>/20)</span></h6>
+                <div id="stickersContainer" class="pt-2">
+
+                </div>
+        </div>
+    </div>
+    <script src="../lib/luxon.min.js"></script>
+    <script src="../lib/toastify.min.js"></script>
+    <script src="../js/stickers.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with your friends!</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/toastify.min.css">
+</head>
+<body>
+    <header class="border-bottom m-0">
+        <h4 class="p-2 title m-0 text-center">MiniChat</h4>
+    </header>
+    <div class="text-center p-3 w-100 h-100">
+        <div style="height: 50px; width: 50px; border-radius: 50%; cursor: pointer; overflow: hidden; margin:auto;" class="mt-4">
+            <input type="color" value="#EC4141" id="profileColor" style="height: 60px; width: 60px; border:none; margin-left: -3px; margin-top: -3px;" maxlength="10">
+        </div> 
+        <input type="text" class="login-input w-75 mt-4" id="login-input" placeholder="Username" maxlength="49">
+        <input type="button" class="register-input w-75 mt-4" value="Create Account" id="register-button">
+        <br>
+        <a class="mt-4 d-block" href="#" id="login-button">Sign in with private key</a>
+    </div>
+    <div id="signWithKey" class="modalchat">
+        <div class="modalchat-content">
+            <div class="border-bottom mb-3">
+                <h4 class="title">Sign in with Key</h4>
+            </div>
+            <div>
+                <input type="text" id="signWithKeyInput" autocomplete="off" class="form-control p-2 mb-3" placeholder="Private key..." style="height: 35px; font-size: 16px;">
+                <input type="button" value="Sign In" class="btn btn-primary w-100 p-0 mb-1" style="height: 25px; font-size: 14px;" id="sign-in-btn">
+                <input type="button" value="Cancel" class="btn close w-100 p-0 btn-outline-secondary" style="height: 25px; font-size: 14px;">
+            </div>
+        </div> 
+    </div>
+    <script src="../lib/toastify.min.js"></script>
+    <script src="../js/register.js"></script>
+</body>

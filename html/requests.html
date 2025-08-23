@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with your friends! - Chats</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/toastify.min.css">
+</head>
+<body class="d-flex h-100 w-100" style="height: 100vh;">
+    <div id="sidebarContainer" data-section="requests"></div>
+    <div style="flex: 1; height: 100vh;" class="border-start">
+        <header class="border-bottom m-0 chat-header">
+            <h1 class="p-2 title m-0 d-inline-block mr-1 h4">Friend Requests
+            </h1>
+        </header>
+        <div class="p-2 requests-container">
+            <div id="requests" class="lh-sm">
+
+            </div>
+        </div>
+        <div class="border border-start-0 text-center p-1 add-chat" id="add-chat" style="bottom: 0;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+            </svg>
+        </div>
+        <div id="addSomeone" class="modalchat">
+            <div class="modalchat-content">
+                <div class="border-bottom mb-3">
+                    <h4 class="title">Add friend</h4>
+                </div>
+                <div>
+                    <input type="text" id="add-name" autocomplete="off" class="form-control p-2 mb-3" placeholder="Username" style="height: 35px; font-size: 16px;">
+                    <input type="button" value="Add" class="btn btn-primary w-100 p-0 mb-1" style="height: 25px; font-size: 14px;" id="add-chat-btn">
+                    <input type="button" value="Cancel" class="btn close w-100 p-0 btn-outline-secondary" style="height: 25px; font-size: 14px;">
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="../lib/luxon.min.js"></script>
+    <script src="../lib/vanillaEmojiPicker.js"></script>
+    <script src="../lib/toastify.min.js"></script>
+    <script src="../js/requests.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
